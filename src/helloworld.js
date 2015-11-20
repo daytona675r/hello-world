@@ -1,4 +1,13 @@
+
+var MyComponent=React.createClass({
+	render: function(){
+		return(
+			<h1>hello {this.props.name}!</h1>
+			);
+	}
+});
+
 ReactDOM.render(
-	<h1>hello world!</h1>,
-	document.getElementById('example')
+	<MyComponent name="Mario"/>,
+	document.getElementById('mount-point')
 	);
